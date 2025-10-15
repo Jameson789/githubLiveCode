@@ -1,13 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jameson Farmer — Projects</title>
+  <meta name="description" content="Projects by Jameson Farmer: Salamander Video Tracking, Pixel-to-Pattern, and Registrar AI Chatbot." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- You can add a webfont later; using system font stack for speed -->
+  <link rel="stylesheet" href="projectStyle.css" />
 </head>
 <body>
-    <h1>Projects</h1>
-    <a href="./index.html">Home</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">JF<span class="dot">.</span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Hi, I’m Jameson— I build practical software.</h1>
+          <p class="lead">
+            From computer vision to full-stack web apps and conversational AI, here are a few projects I’m proud of.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn" href="#about">About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p class="section-sub">Quick snapshots with tech highlights. Click through to dive deeper later.</p>
+        </div>
+
+        <div class="grid cards">
+          <!-- Salamander Video Tracking -->
+          <article class="card">
+            <figure class="card-media">
+              <img src="assets/salamander.jpg" alt="Frame from a salamander video with tracking overlay" />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title">Salamander Video Tracking</h3>
+              <p class="card-desc">
+                A Java/JavaCV pipeline that processes video frames to detect the largest centroid per frame and exports results to CSV for downstream analysis.
+              </p>
+              <ul class="tags">
+                <li>Java</li>
+                <li>JavaCV</li>
+                <li>CSV</li>
+                <li>Docker-ready</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Live Demo</a>
+                <a class="btn btn-primary" href="#" aria-disabled="true">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pixel-to-Pattern (VM Hosted) -->
+          <article class="card">
+            <figure class="card-media">
+              <img src="assets/pixel2pattern.jpg" alt="Stylized crochet pattern grid converted from an image" />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title">Pixel-to-Pattern</h3>
+              <p class="card-desc">
+                A VM-hosted web app where users upload or pick an image to generate crochet patterns. Backed by a MySQL database; built with Node/Express and EJS.
+              </p>
+              <ul class="tags">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MySQL</li>
+                <li>Ubuntu VM</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Live Site</a>
+                <a class="btn btn-primary" href="#" aria-disabled="true">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Registrar AI Chatbot -->
+          <article class="card">
+            <figure class="card-media">
+              <img src="assets/registrar-bot.jpg" alt="Chat interface mockup representing a registrar office bot" />
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title">Registrar AI Chatbot</h3>
+              <p class="card-desc">
+                A conversational assistant for the Office of the Registrar that answers FAQs and routes students to resources, built with Microsoft Copilot Studio and integrated into Teams.
+              </p>
+              <ul class="tags">
+                <li>Copilot Studio</li>
+                <li>Teams</li>
+                <li>Dialog Design</li>
+                <li>Content Ops</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-ghost" href="#" aria-disabled="true">Try Bot</a>
+                <a class="btn btn-primary" href="#" aria-disabled="true">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="section-sub">Quick snapshot—expand later with your story and goals.</p>
+        </div>
+        <div class="about-grid">
+          <p>
+            I’m a BAS Software Development student focused on practical systems: vision pipelines, web apps, and helpful bots.
+            I like clean architecture, useful docs, and shipping features end-to-end.
+          </p>
+          <ul class="bullets">
+            <li>Languages: Java, Python, JavaScript/TypeScript, SQL</li>
+            <li>Web: Node, Express, EJS/React, REST</li>
+            <li>Infra: Linux, Docker, VM deployment</li>
+            <li>Data: CSV/JSON pipelines, basic analytics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="cta">
+          <h2>Let’s connect</h2>
+          <p>Have feedback or want to collaborate? I’m always open to interesting problems.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:you@example.com">Email Me</a>
+            <a class="btn" href="#" aria-disabled="true">LinkedIn</a>
+            <a class="btn" href="#" aria-disabled="true">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jameson Farmer. All rights reserved.</p>
+      <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // tiny enhancements
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
