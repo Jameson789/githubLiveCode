@@ -1,12 +1,34 @@
+body {
+  background-color: lightgray;
+}
+
 p {
   color: darkgoldenrod;
   text-decoration: line-through;
 }
 
 li {
+  /* 
+  Darkred is my favorite color! 
+  */
   color: darkred;
 }
 
 a {
   color: purple;
+}
+
+#soccer {
+  color: green;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.favorite {
+  color: orangered;
+  
+}
+
+.super{
+  font-weight: bolder;
 }
